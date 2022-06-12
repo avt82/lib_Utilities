@@ -8,20 +8,19 @@
  *            github.com/avt82/lib_Utilities
  *****************************************************************************/
 
-#if !defined(COMMONTOOLS_CMDLINE_UTILS_HPP_)
-#define COMMONTOOLS_CMDLINE_UTILS_HPP_
+#if !defined(COMMONTOOLS_UTILITIES_NUMERIC_HPP_)
+#define COMMONTOOLS_UTILITIES_NUMERIC_HPP_
 
 #include <string>
+#include "Utilities/Strings.hpp"
 
 namespace utils {
 
   namespace numeric {
 
-    constexpr int cUpperCaseBit = 0x20;
-
     constexpr int getDigit(int ch) {
       if((ch >= '0') && (ch <= '9')) return (ch - '0');
-      ch |= cUpperCaseBit;
+      ch |= utils::strings::cUpperCaseBit;
       if((ch >= 'a') && (ch <= 'f')) return (ch + 10 - 'a');
       return -1;
     }
@@ -54,4 +53,4 @@ namespace utils {
 
 }
 
-#endif // COMMONTOOLS_CMDLINE_UTILS_HPP_
+#endif // COMMONTOOLS_UTILITIES_NUMERIC_HPP_

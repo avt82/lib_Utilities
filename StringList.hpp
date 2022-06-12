@@ -1,15 +1,16 @@
 /******************************************************************************
  * @ingroup   Utilities
- * @file      Utilities/HexString.hpp
+ * @file      Utilities/StringList.hpp
  * @author    Anton Tkachenko
- * @brief     Class for neat parsing lines of HEX, MOT and TI TXT files
+ * @brief     Class for reading file to vector of string, with some tiny
+ *            adjustments (eg. tab -> spaces conversion)
  * @date      2022/05/07
  * @copyright TM Software, 2022
  *            github.com/avt82/lib_Utilities
  *****************************************************************************/
 
-#if !defined(UTILITIES_STRINGLIST_HPP_)
-#define UTILITIES_STRINGLIST_HPP_
+#if !defined(COMMONTOOLS_UTILITIES_STRINGLIST_HPP_)
+#define COMMONTOOLS_UTILITIES_STRINGLIST_HPP_
 
 #include <vector>
 #include <string>
@@ -133,4 +134,4 @@ namespace utils {
   }
 }
 
-#endif // UTILITIES_STRINGLIST_HPP_
+#endif // COMMONTOOLS_UTILITIES_STRINGLIST_HPP_

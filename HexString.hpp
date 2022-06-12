@@ -8,7 +8,7 @@
  *            github.com/avt82/lib_Utilities
  *****************************************************************************/
 
-#if !defined(UTILITIES_HEXSTRING_HPP_)
+#if !defined(COMMONTOOLS_UTILITIES_HEXSTRING_HPP_)
 #define UTILITIES_HEXSTRING_HPP_
 
 #include <string>
